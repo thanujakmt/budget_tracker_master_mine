@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="/static/scss/css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row heading">
+            <h1>Budget Tracker</h1>
+        </div>
+        <div class="row box">
+            <div class="col-md summary" id="summary">
+                <h3>Summary</h3>
+                <p>Total Income: <span  id="total_income">0</span></p>
+                <p >Total Expense: <span id="total_expense">0</span></p>
+                <p >Remaining Balance: <span id="remaining_bal">0</span></p>   
+            </div>
+            <div class="col-md enter_income" id="enter_income">
+                <h3>Enter Income</h3>
+                <form id="income_form">
+                    <input type="number" name="amount" placeholder="Enetr income amount" class="form-control">
+                    <input type="date" name="date" class="form-control">
+                    <input type="text" name ="category" id = "income_category"  value="Income"  disabled class="form-control" >
+                    <div class="submit_btn">
+                        <button class="button-33" type="button" id="income_button">Submit</button>         
+                    </div>
+                </form>
+            </div>
+            <div class="col-md enter_expense" id="enter_expense">
+                <h3>Enter Expense</h3>
+                <form id="expense_form">
+                    <input type="number" name = "amount" class="form-control" placeholder="Enetr Expense amount">
+                    <input type="date" name = "date" class="form-control">
+                    <select name="category" class="form-control">
+                        <option value="Select Category" selected>Select Category</option>
+                        <option value="Food">Food</option>
+                        <option value="Utilities">Utilities</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Shopping">Shopping</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <div class="submit_btn">
+                        <button class="button-33" type="button" id="Expense_button">Submit</button>         
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row filter">
+            <h2>Go to Expense/Income Date</h2>  
+            <input type="date" id="filter_date">
+        </div>
+        <div class="row month_enries">
+            <h2>Current Month's Entries</h2>
+            <table class="table table-bordered">
+                <tr>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Category</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

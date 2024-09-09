@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  height: 100vh;
+  width: 100%;
+}
+.container-fluid .heading {
+  height: 10%;
+  width: 101%;
+  align-items: center;
+}
+.container-fluid .heading h1 {
+  text-align: center;
+}
+.container-fluid .box {
+  padding: 15px;
+  display: flex;
+  gap: 30px;
+}
+.container-fluid .box .summary {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  background-color: rgb(127, 208, 255);
+  border-radius: 10px;
+}
+.container-fluid .box .summary h3 {
+  margin-top: 20px;
+  font-size: 2em;
+  padding: 10px;
+}
+.container-fluid .box .summary p {
+  padding: 10px;
+  font-size: 1.3em;
+}
+.container-fluid .box .enter_income {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  background-color: rgb(240, 255, 127);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.container-fluid .box .enter_income h3 {
+  margin-top: 20px;
+  font-size: 2em;
+  padding: 10px;
+}
+.container-fluid .box .enter_income form {
+  gap: 20px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.container-fluid .box .enter_income form input {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.container-fluid .box .enter_income form input[type=text] {
+  color: black;
+  border: 1px solid black;
+  background-color: #fff;
+}
+.container-fluid .box .enter_income .button-33 {
+  background-color: #15d55b;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset, rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px, rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px, rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.container-fluid .box .enter_income .button-33:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset, rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px, rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px, rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+.container-fluid .box .enter_expense {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgb(136, 255, 127);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.container-fluid .box .enter_expense h3 {
+  margin-top: 20px;
+  font-size: 2em;
+  padding: 10px;
+}
+.container-fluid .box .enter_expense form {
+  gap: 20px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.container-fluid .box .enter_expense form input {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.container-fluid .box .enter_expense form input[type=text] {
+  color: black;
+  border: 1px solid black;
+  background-color: #fff;
+}
+.container-fluid .box .enter_expense select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.container-fluid .box .enter_expense .button-33 {
+  background-color: #e8fd2a;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset, rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px, rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px, rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.container-fluid .box .enter_expense .button-33:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset, rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px, rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px, rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+.container-fluid .filter {
+  border-radius: 20px;
+  margin: 10px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 30px;
+}
+.container-fluid .filter h2 {
+  padding-bottom: 15px;
+  text-align: center;
+}
+.container-fluid .filter .go_btn {
+  padding: 10px;
+}
+.container-fluid .filter .go_btn .button-33 {
+  background-color: #87ddec;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset, rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px, rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px, rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.container-fluid .filter .go_btn .button-33:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset, rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px, rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px, rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+.container-fluid .month_enries {
+  border-radius: 10px;
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 50px;
+}
+.container-fluid .month_enries table td {
+  border: 2px solid black;
+}
